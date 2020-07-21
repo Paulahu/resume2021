@@ -1,0 +1,93 @@
+
+
+.left {
+  float: left;
+  width: 275px;
+  background: #f1f1f1 !important;
+  min-height: 29.7cm;
+}
+
+.wrapper-left {
+  background-color: #eaaf00ee !important;
+  position: relative;
+  background: url(https://www.cv-mallen.se/wp-content/uploads/2016/11/snoflinga-back2.png) no-repeat bottom right;
+  background-size: cover;
+  height: 290px;
+  text-align: center;
+
+}
+
+.avatar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 25px;
+  border: 3px solid white;
+}
+
+.wrapper-info {
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper-heading {
+  border-bottom: 3px solid #eaaf00 !important;
+  margin-bottom: 10px;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.wrapper-heading > span {
+  font-family:  "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
+.wrapper-content {
+  margin-bottom: 2px;
+}
+
+.wrapper-content > ul {
+  font-size: 15px;
+}
+
+ul > li {
+  margin-bottom: .5em;
+}
+
+.right {
+  float: left;
+  width: calc(100% - 275px);
+  background: transparent !important;
+  padding: 30px 30px 30px 20px;
+}
+
+.wrapper-name {
+  font-size: 25px;
+  font-weight: 500;
+  color: #4c4c4c;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.wrapper-name > span {
+  border-bottom: 3px solid #eaaf00 !important;
+  padding-bottom: 8px ;
+  letter-spacing: .2em;
+}
+
+.side-name {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 20px;
+  color: dimgrey;
+}
+
+
+
+
+
