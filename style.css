@@ -1,10 +1,33 @@
 
+@media (max-width: 576px) {
+  article{
+    width: 100vw;
+  }
+}
+
 
 .left {
   float: left;
   width: 275px;
   background: #f1f1f1 !important;
   min-height: 29.7cm;
+}
+
+@media (max-width: 576px) {
+  .left {
+    width: 100vw;
+    background: #f1f1f1 !important;
+    min-height: 29.7cm;
+  }
+  .wrapper-left {
+    background-color: #eaaf00ee !important;
+    position: relative;
+    /*background: url(https://www.cv-mallen.se/wp-content/uploads/2016/11/snoflinga-back2.png) no-repeat bottom right;*/
+    /*background-size: cover;*/
+    height: 290px;
+    text-align: center;
+  }
+
 }
 
 .wrapper-left {
@@ -14,7 +37,6 @@
   background-size: cover;
   height: 290px;
   text-align: center;
-
 }
 
 .avatar img {
@@ -59,12 +81,37 @@ ul > li {
   margin-bottom: .5em;
 }
 
+ul > .link {
+  margin-bottom: .5em;
+  display: inline-flex;
+}
+
+ul > li > .wrapper-a {
+  display: inline-block;
+  padding-left: .2em;
+}
+
+ul > li > .wrapper-a > div {
+  margin-top: .5em;
+  color: #888;
+}
+
 .right {
   float: left;
   width: calc(100% - 275px);
   background: transparent !important;
   padding: 30px 30px 30px 20px;
 }
+
+
+@media (max-width: 576px) {
+  .right {
+    width: 100vw;
+    /*background: #f1f1f1 !important;*/
+    /*min-height: 29.7cm;*/
+  }
+}
+
 
 .wrapper-name {
   font-size: 25px;
@@ -85,9 +132,65 @@ ul > li {
   text-align: center;
   margin-top: 20px;
   color: dimgrey;
+  margin-bottom: 30px;
+}
+
+.wrapper-right-info {
+  margin-bottom: 20px;
+}
+
+.content-li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-li > .content-side {
+  margin-top: .5em;
+  line-height: 1.7em;
+  color: #888;
+}
+
+.wrapper-content > div {
+  margin-bottom: 10px;
+}
+
+.wrapper-content > .title {
+  margin-bottom: 20px;
+}
+
+.wrapper-content >.title >span:first-child {
+  font-family: "Source Sans Pro", "open sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4c4c4c;
+  margin-right: 1em;
+}
+
+.wrapper-content >.title > span:nth-child(2) {
+  color: #888;
+}
+
+.wrapper-content >div> a {
+  border: 1.5px dotted #eaaf00;
+  padding: 1px 6px;
+  border-radius: 4px;
+  position: relative;
+  right: 0;
+  top: 0;
+  margin-right: 5px;
+}
+
+.wrapper-content img {
+  width: 100%;
+  border: 1px dashed #ddd;
+  border-radius: 10px;
+}
+
+.wrapper-content.distance {
+  margin-bottom: 30px;
 }
 
 
-
-
-
+@media (max-width: 576px) {
+  
+}
