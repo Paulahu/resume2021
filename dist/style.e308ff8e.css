@@ -103,6 +103,10 @@
   font-size: 15px;
 }
 
+.wrapper-content > ul > li > .item > span {
+  font-weight: bold;
+}
+
 ul > li {
   margin-bottom: .5em;
 }
@@ -226,6 +230,13 @@ ul > li > .wrapper-a > div {
   margin-bottom: 30px;
 }
 
-
+.wrapper-content.distance > div > ul> li {
+  list-style: disc;
+  margin-left: 2em;
+  line-height: 1.5;
+}
+.wrapper-content.distance > div > ul> li:first-child {
+  margin-top: .5em;
+}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
