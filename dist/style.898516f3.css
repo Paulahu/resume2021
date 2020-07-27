@@ -3,7 +3,7 @@
   float: left;
   width: 275px;
   background: #f1f1f1 !important;
-  /*min-height: 29.7cm;*/
+  min-height: 29.7cm;
 }
 
 
@@ -17,7 +17,6 @@
 }
 
 
-
 .avatar img {
   width: 130px;
   height: 130px;
@@ -28,7 +27,7 @@
 
 .wrapper-info {
   padding: 0px 20px 0px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .top {
@@ -45,12 +44,14 @@
     background: #f1f1f1 !important;
     min-height: 29.7cm;
   }
+
   .wrapper-left {
     background-color: #eaaf00ee !important;
     position: relative;
     height: 500px;
     text-align: center;
   }
+
   .top {
     display: block;
     padding-top: 50px;
@@ -63,9 +64,10 @@
 
   .top span {
     border-bottom: 3px solid #fff !important;
-    padding-bottom: 8px ;
+    padding-bottom: 8px;
     letter-spacing: .2em;
   }
+
   .top + div {
     display: block;
     font-size: 17px;
@@ -89,7 +91,7 @@
 }
 
 .wrapper-heading > span {
-  font-family:  "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-family: "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: #4c4c4c;
@@ -100,7 +102,7 @@
 }
 
 .wrapper-content > ul {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .wrapper-content > ul > li > .item > span {
@@ -154,7 +156,7 @@ ul > li > .wrapper-a > div {
 
 .wrapper-name > span {
   border-bottom: 3px solid #eaaf00 !important;
-  padding-bottom: 8px ;
+  padding-bottom: 8px;
   letter-spacing: .2em;
 }
 
@@ -177,7 +179,7 @@ ul > li > .wrapper-a > div {
 }
 
 .wrapper-right-info {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .content-li {
@@ -199,7 +201,7 @@ ul > li > .wrapper-a > div {
   margin-bottom: 20px;
 }
 
-.wrapper-content >.title >span:first-child{
+.wrapper-content > .title > span:first-child {
   font-family: "Source Sans Pro", "open sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -207,11 +209,11 @@ ul > li > .wrapper-a > div {
   margin-right: 1em;
 }
 
-.wrapper-content >.title > span:nth-child(2) {
+.wrapper-content > .title > span:nth-child(2) {
   color: #888;
 }
 
-.wrapper-content >div> a {
+.wrapper-content > div > a {
   border: 1.5px dotted #eaaf00;
   padding: 1px 6px;
   border-radius: 4px;
@@ -228,13 +230,14 @@ ul > li > .wrapper-a > div {
 }
 
 .wrapper-content.distance {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
-.content-project > li{
+.content-project > li {
   list-style: disc;
   margin-left: 2em;
   line-height: 1.5;
+  font-size: 14px;
 }
 
 .content-project > li:first-child {
@@ -244,4 +247,4 @@ ul > li > .wrapper-a > div {
 
 
 
-/*# sourceMappingURL=style.0e8c91a2.css.map */
+/*# sourceMappingURL=style.898516f3.css.map */

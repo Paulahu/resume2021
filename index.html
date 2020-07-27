@@ -29,7 +29,7 @@
     }
 
     article {
-      width: 60vw;
+      width: 900px;
       min-height: 29.7cm;
       background-color: #f1f1f1 !important;
       margin: 0 auto;
@@ -51,14 +51,20 @@
       }
     }
   </style>
+
   <style media="print">
     body {
       margin: 0;
     }
 
     article {
-      width: 21cm;
-      min-height: 29.7cm;
+      width: 100%;
+      border: none;
+      /*min-height: 29.7cm;*/
+    }
+
+    .wrapper-content.distance > div > img {
+      display: none;
     }
   </style>
   <style type="text/css">
@@ -253,6 +259,17 @@
           </ul>
         </div>
       </div>
+      <div class="wrapper-info">
+        <div class="wrapper-heading">
+          <span>个人介绍</span>
+        </div>
+        <div class="wrapper-content">
+          <ul class="content-project">
+            <li style="list-style: none;margin-left: 0; line-height: 1.8em">我是一名 <strong>2021届硕士应届生</strong> ，目前学习前端已有近1年的时间了。我认为前端是一个 <strong>充满无限可能</strong> 的领域，我非常享受做出一个项目或解决一个问题带来的 <strong>成就感</strong> ，更享受在社区帮助到其他开发者带来的 <strong>满足感</strong> 。
+              希望在未来，我能通过自己的努力为社区做出贡献，开发出 <strong>用户体验好</strong> 且 <strong>易于维护</strong> 的产品。</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="right">
@@ -262,27 +279,6 @@
       </div>
       <div class="side-name">目标岗位：前端开发工程师</div>
       <!-- introduction-->
-      <div class="wrapper-right-info">
-        <div class="wrapper-heading">
-          <span>个人介绍</span>
-        </div>
-        <div class="wrapper-content">
-          <ul>
-            <li>
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#i-sex_woman"></use>
-              </svg>
-              <span>性&#12288;&#12288;别：女</span>
-            </li>
-            <li>
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#i-age"></use>
-              </svg>
-              <span>年&#12288;&#12288;龄：25岁</span>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div class="wrapper-right-info">
         <div class="wrapper-heading">
           <span>教育经历</span>
@@ -321,7 +317,30 @@
       </div>
       <div class="wrapper-right-info">
         <div class="wrapper-heading">
-          <span>项目介绍</span>
+          <span>技能清单</span>
+        </div>
+        <div class="wrapper-content">
+          <ul class="content-project">
+            <li>熟悉 <strong>HTML5 & CSS3</strong>  ，能够使用HTML5标签编写 <strong>语义化的页面</strong> ，深入理解 <strong>层叠上下文</strong>，
+                掌握 CSS3 <strong>动画</strong> 、 <strong>过渡效果</strong> 、 <strong>响应式</strong> 等常用技术， 具有像素级还原设计稿的能力。</li>
+            <li>熟悉原生 JavaScript 和部分 ES6 新特性，理解其重要概念，如： <strong>原型</strong> 、<strong>原型链</strong> 、 <strong>事件委托</strong> 、
+                <strong>继承</strong> 、 <strong>Promise</strong> 、 <strong>跨域</strong> 、<strong>JsonP</strong> 等。</li>
+            <li>熟悉 <strong>React</strong> 框架及相关流行库（如： Ant Design）的使用，理解其重要概念和工具， 如：常用 <strong>Hooks</strong> 、
+                <strong>create-react-app</strong> 、 <strong>React Router</strong> 、 <strong>Mobx</strong> 等，并有相关项目经验。</li>
+            <li>熟悉 <strong>Vue</strong>  框架及其常用功能，理解其重要概念，如： <strong>生命周期</strong> 、 <strong>数据响应式</strong> 、<strong>组件</strong> 等，并有相关项目经验。</li>
+            <li>掌握 <strong>Git/Github</strong>  工作部署流程， 会使用 Git 进行版本控制</li>
+            <li>熟悉PC与移动端的开发与适配，熟悉 <strong>微信小程序</strong> 开发</li>
+            <li>了解 <strong>HTTP</strong> 相关知识，了解浏览器的渲染原理</li>
+            <li>在项目中使用过 <strong>Webpack</strong>  和 <strong>Parcel</strong>  打包工具，了解前端工程化构建流程</li>
+            <li>了解前端 <strong>单元测试</strong> ，有使用过Mocha + Chai + TravisCI来进行测试的经历</li>
+            <li>持续关注新技术，积极参与线下沙龙交流活动（参加了 <strong>“前端早早聊”</strong> VIP交流群， 参与了“前端女性职业规划经验分享交流会”）</li>
+            <li><strong>英文阅读能力较强</strong>（BEC中级、CET六级），能够流畅阅读英文文档，能通过Stack Overflow解决问题，有总结书写笔记和博客的习惯。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper-right-info">
+        <div class="wrapper-heading">
+          <span>项目经历</span>
         </div>
         <div class="wrapper-content distance">
           <div class="title">
@@ -390,18 +409,13 @@
             </ul>
           </div>
           <div>
-            <a href="https://paulahu.gitee.io/react-epic-project/build/index.html#/" target="_blank">效果预览</a>
+            <a href="https://paulahu.gitee.io/react-epic-project/build/index.html#/" target="_blank">PC端预览</a>
             <a href="https://github.com/Paulahu/react-epic-project" target="_blank">项目源码</a>
           </div>
         </div>
-      </div>
-      <div class="wrapper-right-info">
-        <div class="wrapper-heading">
-          <span>开源项目</span>
-        </div>
         <div class="wrapper-content distance">
           <div class="title">
-            <span>1. Personal Navsite</span>
+            <span>3. Personal Navsite</span>
             <span>自己写的一个实用的导航网站</span>
           </div>
           <div>
@@ -429,13 +443,13 @@
             </ul>
           </div>
           <div>
-            <a href="https://paulahu.gitee.io/personal-navsite/dist/index.html" target="_blank">效果预览</a>
+            <a href="https://paulahu.gitee.io/personal-navsite/dist/index.html" target="_blank">PC端预览</a>
             <a href="https://github.com/Paulahu/Personal-navSite" target="_blank">项目源码</a>
           </div>
         </div>
         <div class="wrapper-content distance">
           <div class="title">
-            <span>2. 哒哒翻译</span>
+            <span>4. 哒哒翻译</span>
             <span>一个简洁、易用的翻译软件(小程序)</span>
           </div>
           <div>
@@ -461,9 +475,15 @@
             <img src="src/translate-code.png" alt="" style="width: 10em;display: block;margin-top: 1em; margin-left: auto;margin-right: auto">
           </div>
         </div>
+      </div>
+      <div class="wrapper-right-info">
+        <div class="wrapper-heading">
+          <span>开源项目</span>
+        </div>
+
         <div class="wrapper-content distance">
           <div class="title">
-            <span>3. Twinkling Rainbow</span>
+            <span>1. Twinkling Rainbow</span>
             <span>一个CSS3动效</span>
           </div>
           <div>
@@ -489,7 +509,7 @@
         </div>
         <div class="wrapper-content distance">
           <div class="title">
-            <span>4. write a DOM tool</span>
+            <span>2. write a DOM tool</span>
             <span>学习DOM时封装的一个DOM库</span>
           </div>
           <div><strong></strong>
