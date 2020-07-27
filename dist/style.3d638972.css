@@ -230,15 +230,17 @@ ul > li > .wrapper-a > div {
   margin-bottom: 30px;
 }
 
-.wrapper-content.distance > div > ul> li {
+.content-project > li{
   list-style: disc;
   margin-left: 2em;
   line-height: 1.5;
 }
-.wrapper-content.distance > div > ul> li:first-child {
+
+.content-project > li:first-child {
   margin-top: .5em;
 }
 
 
 
-/*# sourceMappingURL=style.4012e55b.css.map */
+
+/*# sourceMappingURL=style.3d638972.css.map */

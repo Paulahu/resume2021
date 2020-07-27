@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "description": "jianli",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"rm -rf dist && parcel build index.html --no-minify --public-url ./",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulahu/resume2021.git"
+  },
+  "author": "Paula Hu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paulahu/resume2021/issues"
+  },
+  "homepage": "https://github.com/Paulahu/resume2021#readme"
+}
