@@ -105,7 +105,13 @@
   font-size: 14px;
 }
 
-.wrapper-content > ul > li > .item > span {
+.wrapper-content > ul > li > .control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-content > ul > li > .item > .str {
   font-weight: bold;
 }
 
@@ -247,4 +253,4 @@ ul > li > .wrapper-a > div {
 
 
 
-/*# sourceMappingURL=style.898516f3.css.map */
+/*# sourceMappingURL=style.dc0bb8f5.css.map */
