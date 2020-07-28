@@ -18,7 +18,10 @@
 
     a {
       text-decoration: none;
-      color: #000;}
+      border-bottom: 1px dashed #888888;
+      color: #000;
+
+    }
 
     a:hover {
       color: #eaaf00;
@@ -65,6 +68,31 @@
 
     .wrapper-content.distance > div > img {
       display: none;
+    }
+
+    .left {
+      width: 245px;
+    }
+
+    .right {
+      width: calc(100% - 245px);
+      padding: 30px 20px 10px 20px;
+    }
+
+    .side-name {
+      margin-bottom: 15px;
+    }
+
+    .wrapper-right-info {
+      margin-bottom: 5px;
+    }
+
+    .wrapper-content > .title {
+      margin-bottom: 10px;
+    }
+
+    .content-project > li {
+      line-height: 1.4 ;
     }
   </style>
   <style type="text/css">
@@ -152,7 +180,7 @@
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#i-phone"></use>
               </svg>
-              <span>18255185821</span>
+              <span> <a href="tel:18255185821">18255185821</a></span>
             </li>
             <li>
               <svg class="icon" aria-hidden="true">
@@ -170,7 +198,7 @@
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#i-mail"></use>
               </svg>
-              <span>paulahu1995@gmail.com</span>
+              <span><a href="mailto:paulahu1995@gmail.com">paulahu1995@gmail.com</a></span>
             </li>
           </ul>
         </div>
