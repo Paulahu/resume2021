@@ -76,11 +76,11 @@
 
     .right {
       width: calc(100% - 250px);
-      padding: 30px 20px 10px 20px;
+      padding: 30px 20px 5px 20px;
     }
 
     .side-name {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     .wrapper-right-info {
@@ -93,6 +93,28 @@
 
     .content-project > li {
       line-height: 1.4 ;
+    }
+
+    ul > li {
+      margin-bottom: .4em;
+    }
+    
+    .hide {
+      display: none;
+    }
+
+    .down {
+      display: block;
+      padding: 10px 30px;
+      background-color: #fff;
+    }
+
+    hr {
+      margin-bottom: 1.3em;
+      width: 90%;
+      height: 1px;
+      border: none;
+      background-color: #ffffff;
     }
   </style>
   <style type="text/css">
@@ -319,7 +341,7 @@
             <li>熟悉原生 JavaScript 和部分 ES6 新特性，理解其重要概念，如： <strong>原型</strong> 、<strong>原型链</strong> 、 <strong>事件委托</strong> 、
                 <strong>继承</strong> 、 <strong>Promise</strong> 、 <strong>跨域</strong> 、<strong>JsonP</strong> 等。</li>
             <li>熟悉 <strong>React</strong> 框架及相关流行库（如： Ant Design）的使用，理解其重要概念和工具， 如：常用 <strong>Hooks</strong> 、
-                <strong>create-react-app</strong> 、 <strong>React Router</strong> 、 <strong>Mobx</strong> 等，并有相关项目经验。</li>
+                <strong>create-react-app</strong> 、 <strong>React Router</strong> 、<strong>Redux</strong> 、<strong>Mobx</strong> 等，并有相关项目经验。</li>
             <li>熟悉 <strong>Vue</strong>  框架及其常用功能，理解其重要概念，如： <strong>生命周期</strong> 、 <strong>数据响应式</strong> 、<strong>组件</strong> 等，并有相关项目经验。</li>
             <li>掌握 <strong>Git/Github</strong>  工作部署流程， 会使用 Git 进行版本控制</li>
             <li>熟悉PC与移动端的开发与适配，熟悉 <strong>微信小程序</strong> 开发</li>
@@ -348,7 +370,7 @@
             <ul class="content-project">
               <li >这是我在学习 <strong>Vue</strong> 的过程中做的一套简易 <strong>UI组件库</strong>, 参照了Antd、Element UI、iVew等UI组件库的样式</li>
               <li>该组件目前已支持Button（按钮）、Input（输入框）、Grid（栅格）组件，其他基本组件如Layout（布局）、Toast（吐司弹出） 、Tabs（标签页） 、Pop-over（弹出框） 、Collapse（折叠面板）等组件目前正在开发中。</li>
-              <li>每个组件先进行 <strong>需求分析</strong> ，画出用例图或时序图，再利用 <strong>Axure RP</strong> 进行设计，完成视觉稿；再根据视觉稿进行开发，每开发完一个组件就会用 <strong>Mocha+chai</strong> 进行单元测试，并用 <strong>TravisCI</strong> 持续集成，保证每个组件的质量；再通过 <strong>npm link</strong> 协助测试组件是否能够正常使用；最终制作一个基于 <strong>Vuepress</strong> 来开发一个官方文档，并将组件打包发布到npm，供其他开发者使用。</li>
+              <li>每个组件经 <strong>需求分析</strong> 、画 <strong>用例图</strong> 或时序图、利用 <strong>Axure RP</strong> 设计视觉稿后，再开始开发；每开发完一个组件就会用 <strong>Mocha+chai</strong> 进行单元测试，并用 <strong>TravisCI</strong> 持续集成，保证每个组件的质量；再通过 <strong>npm link</strong> 协助测试组件是否能够正常使用；最终制作一个基于 <strong>Vuepress</strong> 来开发一个官方文档，并将组件打包发布到npm，供其他开发者使用。</li>
             </ul>
           </div>
           <div>
@@ -358,20 +380,11 @@
             </ul>
           </div>
           <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>完成该项目使我对 Vue 的常用特征更加熟悉, 如父子组件如何传值、常用钩子的使用等</li>
-              <li>同时也思考了一些问题，比如style中 <strong>scoped</strong> 属性有什么用，不写会怎么样，写了有什么好处；script中 <strong>name</strong> 属性一定要写吗，写了有什么好处等等。</li>
-              <li>在这一过程中我也遇到了一些问题，比如在写input组件时，如何给input组件添加监听事件、添加事件后如何获得原始的event；在写grid组件时，研究了父子组件created和mounted钩子的执行顺序等。</li>
-              <li>同时,自己对 <strong>前端工程化</strong> 的流程以及 <strong>单元测试</strong> 的重要性有进一步了解，也更加重视 <strong>代码的规范和质量</strong> 。</li>
-            </ul>
-          </div>
-          <div>
             <a href="https://paulahu.gitee.io/grape/" target="_blank">效果预览</a>
             <a href="https://github.com/Paulahu/grape-UI" target="_blank">项目源码</a>
           </div>
         </div>
-        <div class="wrapper-content distance">
+        <div class="wrapper-content distance hide">
           <div class="title">
             <span>2. EPIC IMAGE</span>
             <span>一款用于生成图片在线链接的图床工具</span>
@@ -394,22 +407,14 @@
             </ul>
           </div>
           <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>完成这个项目让我对React常用特性更加熟悉，如常用的 <strong>React Hooks</strong> 包括 <strong>useState/useEffect</strong>  等。</li>
-              <li>在实践的过程中我也遇到一些问题，比如：如何对Antd组件进行二次包装、如何解决项目发布时首次加载正常，再次刷新为404的问题等。</li>
-              <li>这个项目加深了我对 <strong>模块化</strong> 编程的理解和应用，锻炼了我解决问题的能力。</li>
-            </ul>
-          </div>
-          <div>
             <a href="https://paulahu.gitee.io/react-epic-project/build/index.html#/" target="_blank">PC端预览</a>
             <a href="https://github.com/Paulahu/react-epic-project" target="_blank">项目源码</a>
           </div>
         </div>
-        <div class="wrapper-content distance">
+        <div class="wrapper-content distance hide">
           <div class="title">
             <span>3. Personal Navsite</span>
-            <span>自己写的一个实用的导航网站</span>
+            <span>超实用、抽象风的导航网站</span>
           </div>
           <div>
             <img src="src/navsite.png" alt="grape-ui">
@@ -428,19 +433,11 @@
             </ul>
           </div>
           <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>完成这个项目让我对jQuery的使用更加熟悉，对CSS3相关属性和选择器的使用也更加熟练。</li>
-              <li>在实践的过程中我也遇到了一些问题，比如：如何实现点击浮动按钮不跳转到其他页面；在实现删除功能时，怎么知道用户点击的item的index。</li>
-              <li>这个项目让我意识到在写代码前，一定要想好、<strong>把逻辑理清楚再动手写</strong>；其次，要对“烂代码” <strong>零容忍</strong> ，出现过多重复要及时 <strong>重构</strong> ，这样在进行合作开发时才能保证高质高效完成任务。</li>
-            </ul>
-          </div>
-          <div>
             <a href="https://paulahu.gitee.io/personal-navsite/dist/index.html" target="_blank">效果预览</a>
             <a href="https://github.com/Paulahu/Personal-navSite" target="_blank">项目源码</a>
           </div>
         </div>
-        <div class="wrapper-content distance">
+        <div class="wrapper-content distance hide">
           <div class="title">
             <span>4. 哒哒翻译</span>
             <span>一个简洁、易用的翻译软件(小程序)</span>
@@ -457,19 +454,13 @@
             </ul>
           </div>
           <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>这个项目让我对微信小程序的开发流程更加熟悉，了解了如何查找和使用外部接口和资源。</li>
-            </ul>
-          </div>
-          <div>
             <a >扫码浏览</a>
             <a href="https://github.com/Paulahu/quick-translate" target="_blank">项目源码</a>
             <img src="src/translate-code.png" alt="" style="width: 10em;display: block;margin-top: 1em; margin-left: auto;margin-right: auto">
           </div>
         </div>
       </div>
-      <div class="wrapper-right-info">
+      <div class="wrapper-right-info hide">
         <div class="wrapper-heading">
           <span>开源项目</span>
         </div>
@@ -490,12 +481,6 @@
             </ul>
           </div>
           <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>通过制作一些有趣的CSS动效，让我明白作为一名前端工程师也需要有足够的创造力和耐心，这也激发了我想要学好前端的信心。</li>
-            </ul>
-          </div>
-          <div>
             <a href="https://paulahu.gitee.io/rainbow_demo/" target="_blank">效果预览</a>
             <a href="https://github.com/Paulahu/Rainbow_demo" target="_blank">项目源码</a>
           </div>
@@ -508,13 +493,7 @@
           <div><strong></strong>
             【项目介绍】
             <ul class="content-project">
-              <li>这是我在学习DOM的时候，受 jQuery 封装风格的启发，自己封装的一组Api, 目前支持增、删、改、查主要的功能。</li>
-            </ul>
-          </div>
-          <div>
-            【项目收获】
-            <ul class="content-project">
-              <li>通过这个项目不仅让我对DOM的常用Api更加熟悉，还启发了我在学习前端技术的过程要 <strong>多总结</strong> 、 <strong>多思考</strong> ，学会活学活用。</li>
+              <li>这是我在学习DOM的时候，受 jQuery 封装风格的启发，自己封装的一组API, 目前支持增、删、改、查主要的功能。</li>
             </ul>
           </div>
           <div>
@@ -523,8 +502,135 @@
         </div>
       </div>
     </section>
-  </article>
 
+    <section class="down">
+
+        <!-- introduction-->
+      <hr>
+        <div class="wrapper-right-info">
+          <div class="wrapper-content distance">
+            <div class="title">
+              <span style="margin-top: 20px">2. EPIC IMAGE</span>
+              <span>一款用于生成图片在线链接的图床工具</span>
+            </div>
+            <div>
+              <img src="src/epic.png" alt="react-epic">
+            </div>
+            <div>
+              【项目介绍】
+              <ul class="content-project">
+                <li>这是我在学习 <strong>React</strong> 的过程中做的一个图床网站；EPIC IMAGE是一种用于生成图片在线链接的图床工具，用户可以定制图片大小、浏览已上传的图片。</li>
+                <li>核心功能包括：注册、登录、上传图片、图片尺寸定制、上传历史展示和删除等。</li>
+                <li>本项目使用了 <strong>Antd</strong> 的相关组件，使用 <strong>styled-components</strong> 加速React开发，使用 <strong>React-router</strong> 管理路由，具体来说使用了 <strong>Navlink</strong> 来进行路由规划、使用 <strong>Redirect</strong> 实现路径重定向、使用 <strong>React.lazy</strong> 实现页面的懒加载。同时，使用 <strong>react-mobx</strong> 实现状态管理，本项目后台数据接口和管理使用了 <strong>LeanCloud</strong> 来完成。</li>
+              </ul>
+            </div>
+            <div>
+              【技术栈】
+              <ul class="content-project">
+                <li>react-create-app + styled-components + React-Router + Mobx + Antd + LeanCloud</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://paulahu.gitee.io/react-epic-project/build/index.html#/" target="_blank">PC端预览</a>
+              <a href="https://github.com/Paulahu/react-epic-project" target="_blank">项目源码</a>
+            </div>
+          </div>
+          <div class="wrapper-content distance">
+            <div class="title">
+              <span>3. Personal Navsite</span>
+              <span>超实用、抽象风的导航网站</span>
+            </div>
+            <div>
+              <img src="src/navsite.png" alt="grape-ui">
+            </div>
+            <div>
+              【项目介绍】
+              <ul class="content-project">
+                <li>这个项目是我在学习 <strong>jQuery</strong> 的时候写的，设计风格借鉴了Chrone浏览器的样式，在此基础上加以改进。</li>
+                <li>项目的标题使用了 <strong>animation</strong> 属性设计的闪烁效果，还使用了CSS的 <strong>自定义属性</strong> 。核心js部分使用了 <strong>hashMap</strong> 来表示数据结构，使用 <strong>localStorage</strong> 将数据存储到本地，页面首次加载时执行主函数，再根据用户不同的行为执行对应的函数。</li>
+              </ul>
+            </div>
+            <div>
+              【技术栈】
+              <ul class="content-project">
+                <li>jQuery + Javascript + CSS + npm + Parcel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://paulahu.gitee.io/personal-navsite/dist/index.html" target="_blank">效果预览</a>
+              <a href="https://github.com/Paulahu/Personal-navSite" target="_blank">项目源码</a>
+            </div>
+          </div>
+          <div class="wrapper-content distance">
+            <div class="title">
+              <span>4. 哒哒翻译</span>
+              <span>一个简洁、易用的翻译软件(小程序)</span>
+            </div>
+            <div>
+              <img src="src/translate.png" alt="react-epic">
+            </div>
+            <section style="display: inline-flex">
+              <div>
+                【项目介绍】
+                <ul class="content-project">
+                  <li>这是我在学习制作 <strong>小程序</strong> 时写的一个翻译软件，目前已在微信上线。</li>
+                  <li>本项目目前仅支持中文翻译到其他语种，后期会继续完善升级。用户输入待翻译的中文，选择语种后就能看到翻译后的文字。</li>
+                  <li>本项目使用的是百度翻译的接口，根据官方文档配置API。</li>
+                </ul>
+              </div>
+              <div>
+                <img src="src/translate-code.png" alt="" style="width: 8em;display: block;margin: 0 2em">
+              </div>
+            </section>
+            <div>
+              <a >扫码浏览</a>
+              <a href="https://github.com/Paulahu/quick-translate" target="_blank">项目源码</a>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-right-info">
+          <div class="wrapper-heading">
+            <span>开源项目</span>
+          </div>
+
+          <div class="wrapper-content distance">
+            <div class="title">
+              <span>1. Twinkling Rainbow</span>
+              <span>一个CSS3动效</span>
+            </div>
+            <div>
+              <img src="src/rainbow.gif" alt="react-epic">
+            </div>
+            <div>
+              【项目介绍】
+              <ul class="content-project">
+                <li>这个动画是我在学习 <strong>CSS3</strong> 的相关属性时做的一个动效。</li>
+                <li>HTML结构很简单，就是若干个级联的div，样式部分使用 <strong>子元素选择器</strong> 对每层div进行样式设计，颜色渐变效果用 <strong>animation</strong> 属性来实现，波浪效果通过设置 <strong>animation-delay</strong> 来实现。</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://paulahu.gitee.io/rainbow_demo/" target="_blank">效果预览</a>
+              <a href="https://github.com/Paulahu/Rainbow_demo" target="_blank">项目源码</a>
+            </div>
+          </div>
+          <div class="wrapper-content distance">
+            <div class="title">
+              <span>2. Write a DOM Tool</span>
+              <span>学习DOM时封装的一个DOM库</span>
+            </div>
+            <div><strong></strong>
+              【项目介绍】
+              <ul class="content-project">
+                <li>这是我在学习DOM的时候，受 jQuery 封装风格的启发，自己封装的一组API, 目前支持增、删、改、查主要的功能。</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://github.com/Paulahu/write-a-dom-tool" target="_blank">项目源码</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  </article>
 
   <script src="//at.alicdn.com/t/font_1957661_wp0jqj99o2.js"></script>
 </body>
