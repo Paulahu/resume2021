@@ -205,13 +205,14 @@ ul > li > .wrapper-a > div {
 
 .wrapper-content > .title {
   margin-bottom: 20px;
+
 }
 
 .wrapper-content > .title > span:first-child {
   font-family: "Source Sans Pro", "open sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
-  color: #4c4c4c;
+  color: #000;
   margin-right: 1em;
 }
 
@@ -251,8 +252,13 @@ ul > li > .wrapper-a > div {
 }
 
 .down {
-  /*display: none;*/
+  display: none;
 }
 
+.wrapper-content > div > div {
+  display: inline-flex;
+  align-items: end;
+  float: right;
+}
 
-/*# sourceMappingURL=style.27638740.css.map */
+/*# sourceMappingURL=style.49766f46.css.map */
