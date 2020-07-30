@@ -87,7 +87,7 @@
   clear: both;
   display: table;
   width: 100%;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 
 .wrapper-heading > span {
@@ -251,8 +251,8 @@ ul > li > .wrapper-a > div {
 }
 
 .down {
-  display: none;
+  /*display: none;*/
 }
 
 
-/*# sourceMappingURL=style.e1976975.css.map */
+/*# sourceMappingURL=style.27638740.css.map */
